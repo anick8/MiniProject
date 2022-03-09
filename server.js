@@ -12,6 +12,8 @@ const connectdb = require('./config/db');
 
 connectdb();
 
+app.get('/', (req, res) => res.send('Hello Worldx!'));
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 //require('./app/Routes')(app,console);
